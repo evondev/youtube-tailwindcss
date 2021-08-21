@@ -1,0 +1,5 @@
+- Download and install NodeJS: https://nodejs.org/en/download/
+- Open Terminal in project
+- npm install -g
+- npm install
+- npm run dev
