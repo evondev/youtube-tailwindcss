@@ -3,3 +3,5 @@
 - npm install -g
 - npm install
 - npm run dev
+- Mai anh hướng dẫn fix lỗi đi chứ chả lẻ mỗi lần sài em lại đi clone về
+- Mong anh chỉ !
