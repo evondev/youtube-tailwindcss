@@ -15,14 +15,48 @@
     <link rel="stylesheet" href="./build/app.css" />
   </head>
   <body>
+    <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
+    <!-- text-[#ffa400] -->
+    <!--
+      sm: 640px
+      md: 768px
+      lg: 1024px
+      xl: 1280px
+      @media screen and (min-width: 1024px) {
+        font-size: 36px;
+      }
+      sm:tailwind-class
+      md:tailwind-class
+      lg:tailwind-class
+     -->
     <div class="pt-12">
-      <h1 class="text-center text-black text-4xl font-semibold mb-5">
+      <h1
+        class="
+          text-center text-[#ffa400] text-lg
+          sm:text-2xl
+          md:text-3xl
+          lg:text-4xl
+          font-semibold
+          mb-5
+        "
+      >
         Live anywhere
       </h1>
-      <h2 class="text-center font-light text-xl text-gray-500 mb-10">
+      <h2 class="text-center font-light text-xl text-[#07a787] mb-35">
         Keep calm & travel on
       </h2>
-      <div class="grid grid-cols-3 gap-x-8 max-w-6xl mx-auto">
+      <div
+        class="
+          grid grid-cols-1
+          lg:grid-cols-3
+          gap-x-[37px]
+          max-w-6xl
+          mx-auto
+          px-[15px]
+          gap-y-7
+          lg:gap-y-0
+        "
+      >
         <div>
           <div class="h-96 mb-5">
             <img
