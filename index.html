@@ -22,168 +22,98 @@
     <link rel="stylesheet" href="./build/tailwind.css" />
     <link rel="stylesheet" href="./build/app.css" />
   </head>
+  <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
   <body>
-    <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch -->
-    <!-- text-[#ffa400] -->
-    <!--
-      sm: 640px
-      md: 768px
-      lg: 1024px
-      xl: 1280px
-      @media screen and (min-width: 1024px) {
-        font-size: 36px;
-      }
-      sm:tailwind-class
-      md:tailwind-class
-      lg:tailwind-class
-     -->
-    <!-- <div class="pt-12">
-      <h1
-        class="
-          text-center text-[#ffa400] text-lg
-          sm:text-2xl
-          md:text-3xl
-          lg:text-4xl
-          font-semibold
-          mb-5
-        "
-      >
-        Live anywhere
-      </h1>
-      <h2 class="text-center font-light text-xl text-[#07a787] mb-35">
-        Keep calm & travel on
-      </h2>
+    <label for="toggle" class="inline-block cursor-pointer toggle-switch">
+      <input
+        type="checkbox"
+        name=""
+        id="toggle"
+        class="darkmode-input hidden"
+      />
       <div
         class="
-          grid grid-cols-1
-          lg:grid-cols-3
-          gap-x-[37px]
-          max-w-6xl
-          mx-auto
-          px-[15px]
-          gap-y-7
-          lg:gap-y-0
+          w-[100px]
+          h-[40px]
+          border border-[#ccc]
+          rounded-full
+          fixed
+          right-5
+          bottom-5
+          z-50
+          p-[5px]
+          transition-colors
         "
       >
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://images.unsplash.com/photo-1629820684221-d36e61748dc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-lg mb-3">
-            Enjoy the great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
-        </div>
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://images.unsplash.com/photo-1629820684221-d36e61748dc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-lg mb-3">
-            Enjoy the great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
-        </div>
-        <div>
-          <div class="h-96 mb-5">
-            <img
-              src="https://images.unsplash.com/photo-1629820684221-d36e61748dc9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=802&q=80"
-              alt=""
-              class="w-full h-full rounded-lg object-cover"
-            />
-          </div>
-          <h3 class="text-center font-medium text-lg mb-3">
-            Enjoy the great cold
-          </h3>
-          <span class="block text-center text-gray-400 text-sm"
-            >6,789 properties</span
-          >
+        <div
+          class="
+            w-7
+            h-7
+            bg-[#ccc]
+            rounded-full
+            transition-transform
+            darkmode-spinner
+          "
+        ></div>
+      </div>
+    </label>
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
+      <div
+        class="
+          px-5
+          py-8
+          rounded-lg
+          border border-[#eee]
+          text-center
+          bg-white
+          dark:bg-[#0F0D58]
+        "
+      >
+        <img
+          src="https://free3dicon.com/wp-content/uploads/2021/09/compass_perspective_matte_s-2-300x300.png.webp"
+          alt=""
+          class="mb-5 max-w-[100px] mx-auto"
+        />
+        <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">
+          Recommendation
+        </h3>
+        <div
+          class="
+            text-sm
+            leading-loose
+            text-[#9191B4]
+            font-normal
+            dark:text-white
+          "
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, odio,
+          facilis vero quod natus molestiae autem provident nam corporis sint
+          accusamus excepturi at in, temporibus architecto ad voluptatibus
+          maxime. Tenetur!
         </div>
       </div>
-    </div> -->
-    <!-- <div class="group p-10 border border-red-50"> -->
-    <!-- <button
-      class="
-        inline-block
-        py-3
-        px-10
-        m-5
-        text-white
-        bg-[#6A5AF9]
-        rounded-lg
-        transition-all
-        motion-safe:hover:scale-110
-        disabled:opacity-50
-      "
-      disabled
-    >
-      Confirm
-    </button> -->
-    <!-- lg:group-hover:bg-red-400 -->
-    <!-- <input
-      type="text"
-      class="
-        py-3
-        px-3
-        border border-[#ccc]
-        outline-none
-        rounded-xl
-        m-3
-        lg:focus:border-[#ffa400]
-        transition-all
-      "
-    />
-    <input
-      type="checkbox"
-      class="
-        appearance-none
-        checked:bg-blue-600 checked:border-transparent
-        w-5
-        h-5
-        border border-[#eee]
-      "
-    />
-    <ul>
-      <li class="odd:bg-red-500">adfsf</li>
-    </ul> -->
-
-    <!-- hover:bg-red -->
-    <!-- lg:hover:bg-blue -> breakpoint:hover:class -->
-    <!-- parent: group
-    child: breakpiont:group-hover:bg-red -->
-    <div
-      before=""
-      class="
-        w-10
-        h-10
-        flex
-        items-center
-        justify-center
-        text-[#ffa400]
-        mx-auto
-        my-5
-        rounded-xl
-        relative
-        before:content-[attr(before)]
-        before:absolute
-        before:inset-0
-        before:rounded-xl
-        before:bg-current
-        before:opacity-25
-      "
-    >
-      <ion-icon name="airplane-outline"></ion-icon>
     </div>
+    <script>
+      const toggleSwitch = document.querySelector(
+        '.toggle-switch input[type="checkbox"]'
+      );
+      const currentTheme = localStorage.getItem("theme");
+      if (currentTheme) {
+        document.documentElement.setAttribute("class", currentTheme);
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      }
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("class", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("class", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+      toggleSwitch.addEventListener("change", switchTheme);
+    </script>
   </body>
 </html>

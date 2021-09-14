@@ -1,3 +1,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.darkmode-input:checked + div {
+  background-color: #6a5af9;
+}
+.darkmode-input:checked + div .darkmode-spinner {
+  transform: translateX(60px);
+  background-color: white;
+}
